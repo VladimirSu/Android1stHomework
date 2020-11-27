@@ -1,0 +1,140 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textColor="#004067"
+        android:textSize="40sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_login"
+        android:text="您好，欢迎来到知乎日报!"
+        android:textColor="#B4B4B5"
+        android:textSize="15sp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp" />
+
+    <EditText
+        android:id="@+id/edittext_account"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_cornners"
+        android:gravity="left"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_welcome"
+        android:hint="  请输入账号"
+        android:drawableLeft="@mipmap/ic_account"
+        android:maxLength="15"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="15dp" />
+
+    <EditText
+        android:id="@+id/edittext_password"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_cornners"
+        android:gravity="left"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edittext_account"
+        android:hint="  请输入密码"
+        android:drawableLeft="@mipmap/ic_password"
+        android:maxLength="10"
+        android:numeric="integer"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/disp_password"
+        android:text="登   录"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:background="@drawable/button_login"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+
+      />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:text="没有账号？立即注册"
+        android:textColor="#004067"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+
+        android:background="@android:color/transparent"
+        android:theme="@android:style/Theme.Translucent"/>
+
+    <Button
+        android:id="@+id/sinaweibo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="180dp"
+        android:layout_below="@id/signup_button"
+        android:drawableTop="@mipmap/ic_weibo_sina"
+        android:textSize="10sp"
+        android:text="新浪微博登录"
+        android:textColor="#000000"
+        android:background="@android:color/transparent"
+        android:theme="@android:style/Theme.Translucent" />
+
+    <Button
+        android:id="@+id/tencentweibo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="180dp"
+        android:layout_below="@id/signup_button"
+        android:layout_toRightOf="@id/sinaweibo_button"
+        android:drawableTop="@mipmap/ic_weibo_tencent"
+        android:textSize="10sp"
+        android:text="腾讯微博登录"
+        android:textColor="#000000"
+        android:background="@android:color/transparent"
+        android:theme="@android:style/Theme.Translucent" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="同意用户协议"
+        android:textSize="15sp"
+        android:layout_below="@id/edittext_password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="280dp"/>
+
+    <CheckBox
+        android:id="@+id/disp_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="显示密码"
+        android:textSize="15sp"
+        android:layout_below="@id/edittext_password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"/>
+
+</RelativeLayout>
